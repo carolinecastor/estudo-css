@@ -16,24 +16,24 @@ html {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: .4s;
     font-size: 8px;
-   }
-   
-   .btn span:last-child {
+}
+
+.btn span:last-child {
     display: none;
-   }
-   
-   .btn:hover {
+}
+
+.btn:hover {
     transition: .4s;
     border: 2px dashed #2F4F4F;
     background-color: #fff;
     color: #2F4F4F;
-   }
-   
-   .btn:active {
+}
+
+.btn:active {
     background-color: #2F4F4F;
-   }
-   
-   
+}
+
+
 * {
     margin: 0;
     outline: 0;
@@ -41,10 +41,12 @@ html {
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
+
 /* header */
 header {
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 p {
@@ -76,6 +78,7 @@ p {
 .lista a:hover {
     color: #ffffff;
 }
+
 /* Fim Header */
 
 /* MAIN */
@@ -84,6 +87,7 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: #A9A9A9;
 }
 
 .sec {
@@ -103,18 +107,86 @@ p {
 
 .section-imagem {
     display: flex;
-    background-color: #A9A9A9;
+
     height: 100vh;
     padding: 10%;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
+
 .imagem-carol {
     width: 40%;
     object-fit: cover;
     border-radius: 20px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
+
 .sobre {
     width: 50%;
+}
+
+.section-projetos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+
+.projeto-imagens {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 16px;
+}
+
+.section-projetos p {
+    font-size: 12px;
+    padding: 07px;
+}
+
+.projeto-imagens img {
+    width: 15%;
+    height: auto;
+    opacity: 0.8;
+    transition: 0.9s;
+}
+
+.projeto-imagens img:hover {
+    opacity: 1;
+}
+.projeto-imagens2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 16px;
+}
+
+.projeto-imagens2 {
+    margin-top: 24px;
+}
+.projeto-imagens2 img {
+    width: 15%;
+    height: auto;
+    opacity: 0.8;
+    transition: 0.9s;
+}
+   
+.projeto-imagens2 img:hover {
+    opacity: 1;
+}
+
+.linha {
+    height: 1px;
+    width: 80%;
+    background-color: #2F4F4F;
+    margin: 12px 0px;
+}
+
+.linha-sem-margin {
+    position: absolute;
+    top: 70px;
+    height: 1.2px;
 }
