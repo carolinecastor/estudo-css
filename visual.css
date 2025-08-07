@@ -4,6 +4,65 @@ html {
     scroll-behavior: smooth;
 }
 
+.button {
+    height: 35px;
+    width: 140px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    margin-top: 20px;
+  }
+  
+  .button:hover {
+    box-shadow: .5px .5px 150px #252525;
+  }
+  
+  .type1::after {
+    content: "Obrigada!";
+    height: 35px;
+    width: 140px;
+    background-color: #8b0000d5;
+    color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(35px);
+    font-size: 0.7rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .type1::before {
+    content: "Veja nosso blog!";
+    height: 35px;
+    width: 140px;
+    background-color: #8b0000d5;
+    color: #ffffff;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateY(0px) scale(1.2);
+    font-size: 0.65rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .type1:hover::after {
+    transform: translateY(0) scale(1.05);
+  }
+  
+  .type1:hover::before {
+    transform: translateY(-50px) scale(0) rotate(120deg);
+  }
 .btn {
     background-color: #2F4F4F;
     padding: 8px 08px;
@@ -39,7 +98,7 @@ html {
     outline: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-    box-sizing: border-box;
+    box-sizing: border-box
 }
 
 /* header */
@@ -58,7 +117,7 @@ p {
     height: 40px;
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: center;
 }
 
 .lista {
@@ -126,7 +185,7 @@ p {
     width: 50%;
 }
 
-.section-projetos {
+.section-blog {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -142,39 +201,42 @@ p {
     gap: 16px;
 }
 
-.section-projetos p {
+.section-blog p {
     font-size: 12px;
     padding: 07px;
 }
 
-.projeto-imagens img {
+.blog-imagens img {
     width: 15%;
     height: auto;
     opacity: 0.8;
     transition: 0.9s;
+
 }
 
-.projeto-imagens img:hover {
+.blog-imagens img:hover {
     opacity: 1;
 }
-.projeto-imagens2 {
+
+.blog-imagens2 {
     display: flex;
     justify-content: center;
     width: 100%;
     gap: 16px;
 }
 
-.projeto-imagens2 {
+.blog-imagens2 {
     margin-top: 24px;
 }
-.projeto-imagens2 img {
+
+.blog-imagens2 img {
     width: 15%;
     height: auto;
     opacity: 0.8;
     transition: 0.9s;
 }
-   
-.projeto-imagens2 img:hover {
+
+.blog-imagens2 img:hover {
     opacity: 1;
 }
 
@@ -190,3 +252,96 @@ p {
     top: 70px;
     height: 1.2px;
 }
+.justificado {
+    text-align: justify;
+    line-height: 1.5;
+   
+  }
+  /* FIM MAIN */
+
+  /* FOOTER */
+  .footer {
+    background-color: #2F4F4F;
+    color: #D3D3D3;
+    padding: 40px 20px 20px;
+
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+  }
+
+  .footer-section {
+    flex: 1;
+  }
+
+  .footer-section h4 {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .footer-section p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 15px;
+  }
+
+  .social-link {
+    color: #D3D3D3;
+    text-decoration: none;
+    font-size: 12px;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .social-link:hover {
+    color: #ffffff;
+  }
+
+  .social-icon {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+  }
+
+  .social-link:hover .social-icon {
+    transform: scale(1.1);
+  }
+
+  .footer-bottom {
+    border-top: 1px solid #A9A9A9;
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: center;
+  }
+
+  .footer-bottom p {
+    font-size: 11px;
+    color: #A9A9A9;
+  }
+
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+
+    .social-links {
+      justify-content: center;
+    }
+  }
+  
