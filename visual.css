@@ -115,7 +115,7 @@ p {
 
 .nave {
   background-color: #2F4F4F;
-  height: 75px;
+  height: 60px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -124,7 +124,7 @@ p {
 .lista {
   display: flex;
   list-style: none;
-  font-size: 22px;
+  font-size: 14px;
   align-items: center;
   padding: 0px 1;
 }
@@ -152,7 +152,7 @@ p {
 
 .sec {
   width: 100%;
-  height: calc(100vh - 75px);
+  height: calc(100vh - 60px);
   background-image: url(https://images.pexels.com/photos/1379636/pexels-photo-1379636.jpeg?_gl=1*9bbs6*_ga*MTQ2NTE3Mzg3OC4xNzU0NTA0Mzg0*_ga_8JE65Q40S6*czE3NTQ1MDQzODMkbzEkZzEkdDE3NTQ1MDQ0MDQkajM5JGwwJGgw);
   background-size: cover;
   background-position: center;
@@ -354,7 +354,7 @@ p {
   }
   
   .lista {
-    font-size: 24px;
+    font-size: 18px;
   }
   
   .footer-section h4 {
